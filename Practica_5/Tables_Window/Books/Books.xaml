@@ -1,0 +1,27 @@
+﻿<Page x:Class="Practica_5.Tables_Window.Books.Books"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practica_5.Tables_Window.Books"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Books">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Del_Button" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Удалить запись" FontSize="18" Padding="6" Click="Del_Button_Click"/>
+        <Button x:Name="Add_Button" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Добавить запись" FontSize="18" Padding="6" Click="Add_Button_Click_1"/>
+        <Button x:Name="Chn_Button" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Импорт данных" FontSize="18" Padding="6" Click="Chn_Button_Click"/>
+        <DataGrid x:Name="Book_Grid" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" CurrentCellChanged="Book_Grid_CurrentCellChanged"/>
+        <Frame x:Name="Add" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Grid.RowSpan="2"/>
+    </Grid>
+</Page>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="Practica_5.Personal_Cabinet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica_5"
+        mc:Ignorable="d"
+        Title="Personal_Cabinet" Height="500" Width="825">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Регистрация" FontSize="18" Padding="5" Click="Button_Click_1" Name="Regis"/>
+        <Button Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Войти" FontSize="18" Padding="5" Width="120" Click="Button_Click" Name="LogIn"/>
+        <Label Grid.Row="0" Grid.Column="1" Content="Выберите таблицу:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Margin="0,0,0,30"/>
+        <ComboBox Name="Spisok_Tables" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Margin="0,47,0,0" VerticalAlignment="Center" Width="120" Height="32" SelectionChanged="Spisok_Tables_SelectionChanged"/>
+        <Frame x:Name="Page_Frame" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4"/>
+    </Grid>
+</Window>

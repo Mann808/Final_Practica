@@ -1,0 +1,37 @@
+﻿<Page x:Class="Practica_5.Tables_Window.Minor_passengers.Add_min_pas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practica_5.Tables_Window.Minor_passengers"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="Add_min_pas">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Выберите id пассажира" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="17" Grid.Row="0"/>
+        <ComboBox Name="choose_pas" VerticalAlignment="Top" HorizontalAlignment="Center" Width="200" Height="30" Grid.Row="1"/>
+        <Label Content="Свидетельство рождения" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="17" Grid.Row="1"/>
+        <TextBox x:Name="add" VerticalAlignment="Top" HorizontalAlignment="Center" Width="200" Height="30" Grid.Row="2"/>
+        <Label Content="Фамилия" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="17" Grid.Row="2"/>
+        <TextBox x:Name="add1" VerticalAlignment="top" HorizontalAlignment="Center" Width="200" Height="30" Grid.Row="3"/>
+        <Label Content="Имя" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="17" Grid.Row="3"/>
+        <TextBox x:Name="add2" VerticalAlignment="top" HorizontalAlignment="Center" Width="200" Height="30" Grid.Row="4"/>
+        <Label Content="Отчество" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="17" Grid.Row="4"/>
+        <TextBox x:Name="add3" VerticalAlignment="top" HorizontalAlignment="Center" Width="200" Height="30" Grid.Row="5"/>
+        <Label Content="Возраст" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="17" Grid.Row="5"/>
+        <TextBox x:Name="add4" VerticalAlignment="top" HorizontalAlignment="Center" Width="200" Height="30" Grid.Row="6"/>
+        <Button x:Name="Adding" Grid.Row="7" Content="Добавить запись" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18" Padding="10" Click="Adding_Click"/>
+        <Button x:Name="Back" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="59" Click="Back_Click"/>
+    </Grid>
+</Page>
